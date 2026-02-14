@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alquiler de maquinaria y vehículos | Eslom Ingeniería</title>
+  <meta name="description"
+        content="Alquiler de grúas, maquinaria pesada, camiones, autoelevadores y vehículos de apoyo en Berisso, La Plata y Ensenada. Eslom Ingeniería.">
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HEADER -->
+ <header class="site-header">
+  <div class="container header-inner">
+    <div class="logo">
+      <a href="#">Eslom Ingeniería</a>
+    </div>
+
+    <nav class="main-nav">
+      <a href="#catalogo">Equipos</a>
+      <a href="#categorias">Categorías</a>
+      <a href="#proceso">Cómo trabajamos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <!-- Botón hamburguesa (solo se ve en mobile) -->
+    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+      ☰
+    </button>
+  </div>
+</header>
+
+<!-- Menú móvil desplegable -->
+<nav class="mobile-nav" id="mobile-nav">
+  <a href="#catalogo">Equipos</a>
+  <a href="#categorias">Categorías</a>
+  <a href="#proceso">Cómo trabajamos</a>
+  <a href="#contacto">Contacto</a>
+</nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h1>Alquiler de maquinaria y vehículos para obras e industria</h1>
+        <p class="hero-subtitle">
+          Grúas, maquinaria vial, camiones, autoelevadores y flota de soporte para trabajos.
+        </p>
+        
+        <div class="hero-cta">
+          <a
+            href="https://wa.me/549XXXXXXXXXX?text=Hola%2C%20quiero%20consultar%20por%20alquiler%20de%20maquinaria%20y%20veh%C3%ADculos"
+            class="btn btn-primary"
+            target="_blank" rel="noopener"
+          >
+            Escribinos por WhatsApp
+          </a>
+          <a href="#contacto" class="btn btn-secondary">
+            Solicitar presupuesto
+          </a>
+        </div>
+        
+      </div>
+      <div class="hero-image">
+        <!-- Imagen de fondo principal; opcional, porque ya hay background en CSS -->
+        <!-- <img src="img/equipos/john deere 544g/large-used (1).jpg" alt="Flota de maquinaria Eslom"> -->
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+  <div class="container">
+    <h2>¿Por qué elegir Eslom para tu alquiler?</h2>
+    <div class="benefits-grid">
+      <div class="benefit-item">
+        <h3>Flota propia y mantenida</h3>
+        <p>Equipos en funcionamiento, con mantenimiento preventivo y correctivo a cargo de nuestro equipo.</p>
+      </div>
+      <div class="benefit-item">
+        <h3>Asesoramiento técnico</h3>
+        <p>Te ayudamos a definir capacidad, alcance y configuración según tu obra.</p>
+      </div>
+      <div class="benefit-item">
+        <h3>Operadores calificados</h3>
+        <p>Opcionalmente incluimos operadores habilitados para grúas y equipos especiales.</p>
+      </div>
+      <div class="benefit-item">
+        <h3>Cobertura regional</h3>
+        <p>Berisso, La Plata, Ensenada y alrededores.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- CATEGORÍAS -->
+  <section class="section" id="categorias">
+    <div class="container">
+      <h2>Categorías de equipos en alquiler</h2>
+      <div class="category-grid">
+        <button class="category-card" data-filter="todas">
+          <h3>Todos los equipos</h3>
+          <p>Ver todo el catálogo disponible.</p>
+        </button>
+        <button class="category-card" data-filter="gruas">
+          <h3>Grúas y equipos de izaje</h3>
+          <p>Grúas Grove, P&amp;H y equipos especiales de izaje.</p>
+        </button>
+        <button class="category-card" data-filter="maquinaria-vial">
+          <h3>Maquinaria vial y pesada</h3>
+          <p>Cargadoras, excavadoras, motoniveladora, tractores.</p>
+        </button>
+        <button class="category-card" data-filter="camiones">
+          <h3>Camiones</h3>
+          <p>Volcador, hidrogrúa, cesta, 4x4 y más.</p>
+        </button>
+        <button class="category-card" data-filter="elevacion">
+          <h3>Autoelevadores y manipuladores</h3>
+          <p>Autoelevadores CAT, Clark, Linde, Sampi y manipulador JLG.</p>
+        </button>
+        <button class="category-card" data-filter="vehiculos">
+          <h3>Vehículos de apoyo</h3>
+          <p>Pick-ups, Sprinter, Caddy y utilitarios.</p>
+        </button>
+        <button class="category-card" data-filter="auxiliares">
+          <h3>Equipos auxiliares</h3>
+          <p>Contenedores, compresores, motosoldadoras, balanza y más.</p>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATÁLOGO -->
+  <section class="section section-alt" id="catalogo">
+    <div class="container">
+      <h2>Equipos disponibles para alquiler</h2>
+      <p class="section-intro">
+        Estos son algunos de los equipos disponibles. Consultanos por disponibilidad, condiciones y más detalles técnicos.
+      </p>
+
+      <div class="equipment-grid">
+        <!-- IMPORTANTE: el data-equipment debe coincidir con una clave de EQUIPMENT_DATA en main.js -->
+
+        <!-- GRÚA GROVE RT63S -->
+        <article class="equipment-card"
+                 data-category="gruas"
+                 data-equipment="grove-rt63s">
+          <div class="equipment-image">
+            <img src="img/equipos/grua-grove-rt63s/2008_Grove_RT890E_90ton_Rough_Terrain_Crane.jpg" alt="Grúa Grove RT63S 30 tn" />
+          </div>
+          <div class="equipment-body">
+            <h3>Grúa Grove RT63S 30 tn</h3>
+            <p class="equipment-type">Grúa rough terrain</p>
+            <ul class="equipment-specs">
+              <li>Capacidad: 30 tn</li>
+              <li>Pluma: 37 m</li>
+              <li>Año: 1971</li>
+              <li>En funcionamiento</li>
+            </ul>
+            <span class="btn btn-outline">Ver detalles</span>
+          </div>
+        </article>
+
+        <!-- GRÚA GROVE TMS-475 -->
+        <article class="equipment-card"
+                 data-category="gruas"
+                 data-equipment="grove-tms475">
+          <div class="equipment-image">
+            <img src="img/equipos/GrúaGroveTMS‑47545tn/truck-cranes-grove-tms700e-for-sale-100298-83c2d67b60f19b490b31ad85a3acda46.jpg" alt="Grúa Grove TMS-475 45 tn" />
+          </div>
+          <div class="equipment-body">
+            <h3>Grúa Grove TMS‑475 45 tn</h3>
+            <p class="equipment-type">Grúa sobre camión</p>
+            <ul class="equipment-specs">
+              <li>En funcionamiento</li>
+              <li>Capacidad: 45 tn</li>
+              <li>44 m de pluma + plumín</li>
+            </ul>
+            <span class="btn btn-outline">Ver detalles</span>
+          </div>
+        </article>
+
+        <!-- CARGADORA JOHN DEERE 544G -->
+        <article class="equipment-card"
+                 data-category="maquinaria-vial"
+                 data-equipment="john-deere-544g">
+          <div class="equipment-image">
+            <img src="img/equipos/john deere 544g/large-used (1).jpg" alt="Cargadora frontal John Deere 544G" />
+          </div>
+          <div class="equipment-body">
+            <h3>Cargadora frontal John Deere 544G</h3>
+            <p class="equipment-type">Maquinaria vial</p>
+            <ul class="equipment-specs">
+              <li>En funcionamiento</li>
+              <li>Balde de 2 m³</li>
+              <li>Año: 1994</li>
+            </ul>
+            <span class="btn btn-outline">Ver detalles</span>
+          </div>
+        </article>
+
+        <!-- EXCAVADORA HYDROMAC H145 -->
+        <article class="equipment-card"
+                 data-category="maquinaria-vial"
+                 data-equipment="hydromac-h145">
+          <div class="equipment-image">
+            <img src="img/equipos/hydromac-h145/d7csoFRlymzfYqqA.jpg" alt="Excavadora Hydromac H145" />
+          </div>
+          <div class="equipment-body">
+            <h3>Excavadora Hydromac H145</h3>
+            <p class="equipment-type">Excavadora sobre orugas</p>
+            <ul class="equipment-specs">
+              <li>En funcionamiento</li>
+              <li>Brazo recto boom doble</li>
+              <li>Alcance: 6,30 m</li>
+              <li>Balde: 1,20 m³</li>
+            </ul>
+            <span class="btn btn-outline">Ver detalles</span>
+          </div>
+        </article>
+
+        <!-- MANIPULADOR JLG SKYTRAK 6036 -->
+        <article class="equipment-card"
+                 data-category="elevacion"
+                 data-equipment="manipulador-jlg-6036">
+          <div class="equipment-image">
+            <img src="img/equipos/manipulador-jlg/ns9UUECT3WUAuqkY.jpg" alt="Manipulador JLG Skytrak 6036" />
+          </div>
+          <div class="equipment-body">
+            <h3>Manipulador JLG Skytrak 6036</h3>
+            <p class="equipment-type">Manipulador telescópico</p>
+            <ul class="equipment-specs">
+              <li>Año: 2006</li>
+              <li>Capacidad: 2.721 kg</li>
+              <li>Centro de carga: 610 mm</li>
+              <li>Altura máx. horquilla: 11.200 mm</li>
+            </ul>
+            <span class="btn btn-outline">Ver detalles</span>
+          </div>
+        </article>
+
+        <!-- AUTOELEVADOR CAT V60B -->
+        <article class="equipment-card"
+                 data-category="elevacion"
+                 data-equipment="autoelevador-cat-v60b">
+          <div class="equipment-image">
+            <img src="img/equipos/autoelevador-cat-v60b/Qm7NXiEQe8YyuNN7.jpg" alt="Autoelevador CAT V60B" />
+          </div>
+          <div class="equipment-body">
+            <h3>Autoelevador CAT V60B</h3>
+            <p class="equipment-type">Autoelevador</p>
+            <ul class="equipment-specs">
+              <li>Capacidad: 2,5 tn</li>
+              <li>En funcionamiento</li>
+              <li>Sin faltantes</li>
+            </ul>
+            <span class="btn btn-outline">Ver detalles</span>
+          </div>
+        </article>
+
+        <!-- CAMIÓN VOLCADOR SCANIA -->
+        <article class="equipment-card"
+                 data-category="camiones"
+                 data-equipment="camion-scania-volcador">
+          <div class="equipment-image">
+            <img src="img/equipos/scania-volcador-314/venta-camion-scania-P420-8x4volcadora-15m3-vuelco-tri-lateral-dce-dubini-camiones-equipados-04.jpg" alt="Camión volcador Scania 314-P380 B 6x4" />
+          </div>
+          <div class="equipment-body">
+            <h3>Camión volcador Scania 314‑P380 B 6x4</h3>
+            <p class="equipment-type">Camión volcador</p>
+            <ul class="equipment-specs">
+              <li>En funcionamiento</li>
+              <li>Modelo: 2011</li>
+            </ul>
+            <span class="btn btn-outline">Ver detalles</span>
+          </div>
+        </article>
+
+        <!-- PICK-UP AMAROK -->
+        <article class="equipment-card"
+                 data-category="vehiculos"
+                 data-equipment="vw-amarok-2012">
+          <div class="equipment-image">
+            <img src="img/equipos/vw-amarok-2012-1/nueva-volkswagen-amarok-v6.jpg" alt="Volkswagen Amarok 2.0 TDI 122 2012" />
+          </div>
+          <div class="equipment-body">
+            <h3>Volkswagen Amarok 2.0 TDI 122</h3>
+            <p class="equipment-type">Pick‑up doble cabina</p>
+            <ul class="equipment-specs">
+              <li>Tipo: Pick‑up</li>
+              <li>Año: 2012</li>
+            </ul>
+            <span class="btn btn-outline">Ver detalles</span>
+          </div>
+        </article>
+
+        <!-- CONTENEDOR ELÉCTRICO 6M -->
+        <article class="equipment-card"
+                 data-category="auxiliares"
+                 data-equipment="contenedor-electrico-6m">
+          <div class="equipment-image">
+            <img src="img/equipos/contenedor-electrico/Stavebni-kontejner-6-m-vcetne-izolace-a-elektroinstalace-na-pronajem-1-584x438.webp" alt="Contenedor eléctrico 6 m" />
+          </div>
+          <div class="equipment-body">
+            <h3>Contenedor eléctrico 6 m</h3>
+            <p class="equipment-type">Equipo auxiliar</p>
+            <ul class="equipment-specs">
+              <li>En funcionamiento</li>
+              <li>Módulo eléctrico montado en contenedor</li>
+            </ul>
+            <span class="btn btn-outline">Ver detalles</span>
+          </div>
+        </article>
+
+        <!-- AGREGAR MÁS TARJETAS SIGUIENDO LA MISMA LÓGICA -->
+      </div>
+    </div>
+  </section>
+
+  <!-- CÓMO TRABAJAMOS -->
+  <section class="section" id="proceso">
+    <div class="container">
+      <h2>¿Cómo trabajamos?</h2>
+      <ol class="steps-list">
+        <li>
+          <h3> Consulta</h3>
+          <p>Nos indicás qué equipo necesitás, tipo de trabajo, fechas y lugar.</p>
+        </li>
+        <li>
+          <h3>Asesoramiento técnico</h3>
+          <p>Te ayudamos a elegir el equipo más adecuado según carga, alcance y condiciones de obra.</p>
+        </li>
+        <li>
+          <h3>Presupuesto</h3>
+          <p>Te enviamos una propuesta detallada con costos y condiciones de alquiler.</p>
+        </li>
+        <li>
+          <h3>Entrega y operación</h3>
+          <p>Coordinamos entrega, montaje y, cuando corresponde, operador especializado.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+ <!-- CONTACTO -->
+<section class="section section-contact" id="contacto">
+  <div class="container contact-banner">
+    <div class="contact-left">
+      <h2>Contacto</h2>
+      <p class="contact-subtitle">
+        Ubíquenos en la localidad de Berisso, Buenos Aires.
+      </p>
+
+      <!-- Logo grande -->
+      <div class="contact-logo">
+        <!-- Si tenés el logo como imagen, usá esto: -->
+        <!-- <img src="img/eslom-logo-blanco.png" alt="Eslom Ingeniería SRL"> -->
+        <span class="logo-mark">E</span>
+        <span class="logo-text">ESLOM <span>Ingeniería SRL</span></span>
+      </div>
+    </div>
+
+    <div class="contact-right">
+      <p class="contact-right-title">Contáctenos para mayor asesoramiento</p>
+
+      <p class="contact-phone">0221 4616511</p>
+
+      <div class="contact-emails">
+        <a href="mailto:info@eslomingenieria.com.ar">info@eslomingenieria.com.ar</a><br />
+        <a href="mailto:administracion@eslomingenieria.com.ar">administracion@eslomingenieria.com.ar</a>
+      </div>
+
+      <p class="contact-hours">
+        Horario de atención de lunes a viernes de 8 a 18 hs.
+      </p>
+    </div>
+  </div>
+
+
+   <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Eslom Ingeniería SRL. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- CHAT SIMPLIFICADO -->
+    <!-- CHAT SIMPLIFICADO -->
+<div class="chat-widget" id="chat-widget">
+  <div class="chat-toggle" id="chat-toggle">
+    <span class="chat-toggle-icon">
+      <img src="img/-chat_90049.png" alt="" aria-hidden="true">
+    </span>
+    <span class="chat-toggle-label">Chat En linea</span>
+  </div>
+
+  <div class="chat-window" id="chat-window" aria-hidden="true">
+    <div class="chat-header">
+      <span>Asistente Eslom</span>
+      <button type="button" class="chat-close" id="chat-close">&times;</button>
+    </div>
+    <div class="chat-body" id="chat-body">
+      <div class="chat-message bot">
+        <p>Hola, soy el asistente virtual de Eslom. ¿En qué te puedo ayudar?</p>
+        <div class="chat-quick-options">
+          <button data-option="gruas">Quiero consultar por una grúa</button>
+          <button data-option="camiones">Consulta por camiones</button>
+          <button data-option="otros">Otro equipo / duda general</button>
+        </div>
+      </div>
+    </div>
+    <form class="chat-input-area" id="chat-form">
+      <input
+        type="text"
+        id="chat-input"
+        placeholder="Escribí tu consulta..."
+        autocomplete="off"
+      />
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+</div>
+
+    <div class="chat-window" id="chat-window" aria-hidden="true">
+      <div class="chat-header">
+        <span>Asistente Eslom</span>
+        <button type="button" class="chat-close" id="chat-close">&times;</button>
+      </div>
+      <div class="chat-body" id="chat-body">
+        <div class="chat-message bot">
+          <p>Hola, soy el asistente virtual de Eslom. ¿En qué te puedo ayudar?</p>
+          <div class="chat-quick-options">
+            <button data-option="gruas">Quiero consultar por una grúa</button>
+            <button data-option="camiones">Consulta por camiones</button>
+            <button data-option="otros">Otro equipo / duda general</button>
+          </div>
+        </div>
+      </div>
+      <form class="chat-input-area" id="chat-form">
+        <input
+          type="text"
+          id="chat-input"
+          placeholder="Escribí tu consulta..."
+          autocomplete="off"
+        />
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- BOTÓN WHATSAPP FLOTANTE -->
+  <a
+  href="https://wa.me/549XXXXXXXXXX?text=Hola%2C%20quiero%20hacer%20una%20consulta%20por%20alquiler%20de%20maquinaria"
+  class="whatsapp-floating"
+  target="_blank"
+  rel="noopener"
+  aria-label="Escribinos por WhatsApp"
+>
+  <img src="img/Whatsapp_37229.png" alt="WhatsApp">
+</a>
+
+
+    <!-- MODAL DETALLE DE EQUIPO -->
+  <div class="equipment-modal" id="equipment-modal" aria-hidden="true">
+    <div class="equipment-modal-backdrop" data-close="modal"></div>
+
+    <div class="equipment-modal-dialog" role="dialog" aria-modal="true">
+      <button class="equipment-modal-close" type="button" data-close="modal">&times;</button>
+
+      <div class="equipment-modal-content">
+        <!-- IZQUIERDA: CARRUSEL -->
+        <div class="equipment-modal-gallery">
+          <div class="equipment-modal-carousel">
+            <!-- Imágenes se inyectan por JS -->
+          </div>
+          <button class="carousel-control prev" type="button">&#10094;</button>
+          <button class="carousel-control next" type="button">&#10095;</button>
+        </div>
+
+        <!-- DERECHA: DETALLES -->
+        <div class="equipment-modal-details">
+          <h3 id="modal-equipment-title"></h3>
+          <p id="modal-equipment-type" class="equipment-modal-type"></p>
+          <ul id="modal-equipment-specs" class="equipment-modal-specs"></ul>
+
+          <a href="#"
+             id="modal-equipment-whatsapp"
+             class="btn btn-primary"
+             target="_blank"
+             rel="noopener">
+            Consultar por este equipo
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCRIPTS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
