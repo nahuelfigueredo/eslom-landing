@@ -529,10 +529,10 @@ body {
    FOOTER
 ---------------------------*/
 .site-footer {
-  background-color: #0b2b4a;
+  background-color: ;
   color: #e5ecf5;
-  padding: 1rem 0;
-  margin-top: 2rem;
+  padding: 0rem 0;
+  margin-top: 3rem;
 }
 
 .site-footer p {
