@@ -1,0 +1,10 @@
+# Docs / office / exports
+*.pdf
+*.ppt
+*.pptx
+*.doc
+*.docx
+
+# OS
+.DS_Store
+Thumbs.db
